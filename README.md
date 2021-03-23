@@ -54,7 +54,7 @@ Netty为高并发而生，spring5后推出Spring WebFlux（底层Netty）的，�
 
 #### 2.1.5 项目架构图
 
-![image](架构图.png)
+![image](https://github.com/ThinkingJava/igferry/blob/develop/image/架构图.png?raw=true)
 
 ## 3 服务说明
 ### 3.1 igferry-deliver服务
@@ -476,7 +476,7 @@ D:\kafka_2.12-2.6.0\bin\windows\kafka-topics.bat --alter --zookeeper localhost:2
 
 ### 4.6 用postman调试链路是否正常
 
-![](postman请求.png)
+![image](https://github.com/ThinkingJava/igferry/blob/develop/image/postman请求.png?raw=true)
 
 ### 4.7 性能压测
 
@@ -494,11 +494,11 @@ D:\kafka_2.12-2.6.0\bin\windows\kafka-topics.bat --alter --zookeeper localhost:2
 
 压测结果：1000个线程，循环10次，吞吐量大概每秒1657个请求。
 
-![](压测1.png)
+![image](https://raw.githubusercontent.com/ThinkingJava/igferry/develop/image/压测1.png?raw=true)
 
-![](压测2.png)
+![image](https://raw.githubusercontent.com/ThinkingJava/igferry/develop/image/压测2.png?raw=true)
 
-![](压测3.png)
+![image](https://github.com/ThinkingJava/igferry/blob/develop/image/压测3.png?raw=true)
 
 
 

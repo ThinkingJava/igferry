@@ -85,7 +85,6 @@
 	</dependencies>
 
 	<modules>
-		<module>igferry-register</module>
 		<module>igferry-common</module>
 		<module>igferry-gateway</module>
 		<module>igferry-server</module>
