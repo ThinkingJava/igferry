@@ -1,0 +1,12 @@
+server:
+  port: 4001
+
+spring:
+  application:
+    name: @artifactId@
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_HOST:127.0.0.1}:${NACOS_PORT:8848}
+  profiles:
+    active: @profiles.active@

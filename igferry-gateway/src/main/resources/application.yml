@@ -1,0 +1,33 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: @artifactId@
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_HOST:127.0.0.1}:${NACOS_PORT:8848}
+      config:
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        file-extension: yml
+        shared-configs:
+          - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+  profiles:
+    active: @profiles.active@
+
+gray:
+  rule:
+    enabled: true
+
+igferry:
+  gate:
+    load-balance: round
+    time-out-millis: 30000
+    cache-refresh-interval: 10
+    web-socket-port: 9999
+  kafka:
+    servers: 127.0.0.1:9092
+    consumerTopic: igferry-gateway-deliver
+    pollTimeout: 3000
+    timeout: 60000
